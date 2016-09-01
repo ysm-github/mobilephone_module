@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+ <classPathEntry location="E:\workspaces\sxit\music\music_crawl\lib\ojdbc5.jar" />
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+    	<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />    
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />   
+           
+        <commentGenerator>  
+            <property name="suppressAllComments" value="true" />  
+            <property name="suppressDate" value="true" />
+        </commentGenerator> 
+        <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
+            connectionURL="jdbc:oracle:thin:@10.10.0.158:1521:ora11" userId="DGLLFX" password="DGLLFX">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.sxit.crawler.commons.model"
+            targetProject="app_crawl">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+		<!-- 
+        <sqlMapGenerator targetPackage="com.sxit.music.commons.mappers"
+            targetProject="music_crawl">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.sxit.music.commons.mappers" 
+        	targetProject="music_crawl">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+        <table tableName="tbas_music" domainObjectName="MusicEntity" ></table>
+        <table tableName="tbas_musicapp" domainObjectName="MusicAppEntity" ></table>
+        <table tableName="tbas_musicclass" domainObjectName="MusicClassEntity" ></table>
+        <table tableName="tbas_musicclass_rel" domainObjectName="MusicClassRelEntity" ></table>
+        <table tableName="tbas_musicfeature" domainObjectName="MusicFeatureEntity" ></table>
+        <table tableName="tbas_musicmap" domainObjectName="MusicMapEntity" ></table>
+        <table tableName="tbas_musicsinger" domainObjectName="MusicSingerEntity" ></table>
+        <table tableName="tbas_musicsinger_rel" domainObjectName="MusicSingerRelEntity" ></table>
+        <table tableName="tbas_musicurl" domainObjectName="MusicUrlEntity" ></table>
+        <table tableName="tbas_mobilephone" domainObjectName="MobilePhoneEntity" ></table>
+        <table tableName="tbas_mm" domainObjectName="MobileAppEntity" ></table>
+        <table tableName="tbas_mm_class" domainObjectName="MobileAppClassEntity" ></table>
+		 -->
+        <table tableName="tbas_mm_search_keyword" domainObjectName="MobileAppSearchKeywordEntity" ></table>
+    </context>
+</generatorConfiguration>

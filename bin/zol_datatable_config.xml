@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dataTableConfig SYSTEM "datatable_config.dtd" >
+<dataTableConfig>
+	<tableName>TBAS_MOBILE_PARAM_ZOL</tableName>
+	
+	<!-- 唯一字段 -->
+	<unique_column value="SYS_URL_MD5" />
+	
+	<unique_sql>
+		<!-- 判断唯一值 -->
+		select count(*) from TBAS_MOBILE_PARAM_ZOL where SYS_URL_MD5 = :SYS_URL_MD5
+	</unique_sql>
+	<columns>
+		<column columnName="SYS_SEQ_NO" defaultValue="SEQ_MOBILE_PARAM_ZOL.NEXTVAL" />
+		<column columnName="SYS_CRT_DATE" defaultValue="sysdate" />
+		<column columnName="SYS_URL" srcKey="SYS_URL" />
+		<column columnName="SYS_URL_MD5" srcKey="SYS_URL_MD5" />
+		<column columnName="BASE_BRAND" srcKey="BASE_BRAND" />
+		<column columnName="BASE_PRD_NAME" srcKey="BASE_PRD_NAME" />
+		<column columnName="BASE_PRICE" srcKey="BASE_PRICE" />
+		
+		<column columnName="BASE_OS" srcKey="操作系统" />
+		<column columnName="BASE_MARK_DATE" srcKey="曝光日期" />
+		<column columnName="BASE_TYPE" srcKey="手机类型" />
+		<column columnName="BASE_SHOWTYPE" srcKey="外观设计" />
+		<column columnName="BASE_NET_MODE" srcKey="网络模式" />
+		<column columnName="BASE_NET_TYPE" srcKey="网络类型" />
+		<column columnName="BASE_DATA_BIZ" srcKey="数据业务" />
+		<column columnName="BASE_NET_BAND" srcKey="支持频段" />
+		<column columnName="BASE_3G" srcKey="3G" />
+		<column columnName="BASE_KEYBORD_TYPE2" srcKey="按键类型" />
+		<column columnName="BASE_COLOR" srcKey="机身颜色" />
+		<column columnName="BASE_L_W_H" srcKey="手机尺寸" />
+		<column columnName="BASE_WEIGHT" srcKey="手机重量" />
+		<column columnName="BASE_OTHER" srcKey="其他特性" />
+		<column columnName="BASE_OPERATOR_FLAG" srcKey="运营商定制" />
+		<column columnName="BASE_CPU_CORENUMS" srcKey="核心数" />
+		<column columnName="BASE_CPU_MODEL" srcKey="CPU型号" />
+		<column columnName="BASE_CPU_RATE" srcKey="CPU频率" />
+		<column columnName="BASE_GPU" srcKey="GPU型号" />
+		<column columnName="BASE_RAM" srcKey="RAM容量" />
+		<column columnName="BASE_ROM" srcKey="ROM容量" />
+		<column columnName="BASE_SDCARD" srcKey="存储卡" />
+		<column columnName="BASE_SIM_SPEC" srcKey="SIM卡类型" />
+		<column columnName="BASE_BATT_TYPE" srcKey="电池类型" />
+		<column columnName="BASE_BATT_CAP" srcKey="电池容量" />
+		<column columnName="BASE_LONG_TIME" srcKey="理论待机时间" />
+		<column columnName="BASE_TEL_TIME" srcKey="理论通话时间" />
+		<column columnName="BASE_KEYBORD_TYPE" srcKey="键盘类型" />
+		<column columnName="BASE_EXTROM" srcKey="扩展容量" />
+		<column columnName="BASE_3D" srcKey="3D加速" />
+		<column columnName="BASE_OTHER_PARAM" srcKey="其它参数" />
+		<column columnName="SCREEN_SIZE" srcKey="主屏尺寸" />
+		<column columnName="SCREEN_COLOR" srcKey="主屏色彩" />
+		<column columnName="SCREEN_TOUCH_FLAG" srcKey="触摸屏" />
+		<column columnName="SCREEN_RESOLUTION" srcKey="主屏分辨率" />
+		<column columnName="SCREEN_PPIRESOLUTION" srcKey="屏幕像素密度" />
+		<column columnName="SCREEN_MATE" srcKey="主屏材质" />
+		<column columnName="SCREEN_REMARK" srcKey="副屏参数" />
+		<column columnName="TRANS_BLUETOOTH" srcKey="蓝牙传输" />
+		<column columnName="TRANS_WIFI_WLAN" srcKey="WLAN功能" />
+		<column columnName="TRANS_WIFI_DLAN" srcKey="DLNA技术" />
+		<column columnName="TRANS_OTHER" srcKey="其它特点" />
+		<column columnName="TRANS_WIFI_HOT" srcKey="无线AP" />
+		<column columnName="TRANS_GPS_INN" srcKey="GPS导航" />
+		<column columnName="MEDIA_VIDEO_PLAY_FLAG" srcKey="视频播放" />
+		<column columnName="MEDIA_AUDIO_PLAY_FLAG" srcKey="音频播放" />
+		<column columnName="MEDIA_IMAGE_FORMAT" srcKey="图形格式" />
+		<column columnName="MEDIA_EARPLUG_INTFSIZE" srcKey="耳机插孔" />
+		<column columnName="CAM_DESC" srcKey="摄像头" />
+		<column columnName="CAM_TYPE" srcKey="摄像头类型" />
+		<column columnName="CAM_MAIN_PIX" srcKey="后置摄像头像素" />
+		<column columnName="CAM_FRONT_PIX" srcKey="前置摄像头像素" />
+		<column columnName="CAM_SENSOR_TYPE" srcKey="传感器类型" />
+		<column columnName="CAM_FLASHLIGHT" srcKey="闪光灯" />
+		<column columnName="CAM_APERTURE" srcKey="光圈" />
+		<column columnName="CAM_AUTO_FOCUS" srcKey="自动对焦" />
+		<column columnName="CAM_IMAGE_SIZE" srcKey="图像尺寸" />
+		<column columnName="CAM_MODE" srcKey="拍摄模式" />
+		<column columnName="CAM_SCENES" srcKey="场景模式" />
+		<column columnName="CAM_IMAGE_PROC" srcKey="照片特效" />
+		<column columnName="CAM_VIDEO" srcKey="视频拍摄" />
+		<column columnName="CAM_FOCUS" srcKey="焦距/范围" />
+		<column columnName="CAM_FOCUS_OPTICAL" srcKey="光学变焦" />
+		<column columnName="CAM_FOCUS_DATA" srcKey="数码变焦" />
+		<column columnName="SENSOR_GYROSCOPE" srcKey="陀螺仪" />
+		<column columnName="SENSOR_ELC_COMPASS" srcKey="电子罗盘" />
+		<column columnName="SENSOR_TYPE" srcKey="感应器类型" />
+		<column columnName="APP_INPUT" srcKey="输入法" />
+		<column columnName="APP_INPUTTYPE" srcKey="输入方式" />
+		<column columnName="APP_CALLRECORD" srcKey="通话记录" />
+		<column columnName="APP_CONTACTS" srcKey="通讯录" />
+		<column columnName="APP_MMS" srcKey="彩信(MMS)" />
+		<column columnName="APP_SMS" srcKey="短信(SMS)" />
+		<column columnName="APP_EBOOK" srcKey="电子书" />
+		<column columnName="APP_EMAP" srcKey="地图软件" />
+		<column columnName="APP_GAME" srcKey="游戏" />
+		<column columnName="APP_VOICE" srcKey="语音功能" />
+		<column columnName="APP_JAVAEXT" srcKey="Java扩展" />
+		<column columnName="APP_EMAIL" srcKey="电子邮件" />
+		<column columnName="APP_CALC" srcKey="计算器" />
+		<column columnName="APP_FLASH" srcKey="Flash播放" />
+		<column columnName="APP_MEMO" srcKey="备忘录" />
+		<column columnName="APP_OFFICE" srcKey="办公工具" />
+		<column columnName="APP_DIC" srcKey="电子词典" />
+		<column columnName="APP_SEC" srcKey="三防功能" />
+		<column columnName="APP_TIMER" srcKey="定时器" />
+		<column columnName="APP_SCHEDULE" srcKey="日程表" />
+		<column columnName="APP_VOICE_RECORD" srcKey="录音功能" />
+		<column columnName="APP_SNS" srcKey="社交应用" />
+		<column columnName="APP_BC_SCAN" srcKey="名片扫描" />
+		<column columnName="APP_BROWSER" srcKey="浏览器" />
+		<column columnName="APP_ALERT" srcKey="闹钟功能" />
+		<column columnName="APP_NOTE" srcKey="记事本" />
+		<column columnName="APP_WTIME" srcKey="世界时间" />
+				
+	</columns>
+</dataTableConfig>
